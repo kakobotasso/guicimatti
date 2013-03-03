@@ -7,8 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id="menu">
+		<ul>
+			<li><%= link_to "Sair", logout_path %></li>
+		</ul>
+	</div>
 
-<%= yield %>
+	<%= yield %>
 
 </body>
 </html>

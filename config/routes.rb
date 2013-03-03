@@ -1,4 +1,15 @@
 Guicimatti::Application.routes.draw do
+
+  controller :sessions do
+    get  "/admin",  :action => :new,     :as => :login
+    post "/admin",  :action => :create,  :as => false
+    get  "/admin/sair", :action => :destroy, :as => :logout
+  end
+
+  controller :dashboard do
+    get "/admin/home", :action => :index, :as => :dashboard
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

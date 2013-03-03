@@ -1,0 +1,14 @@
+<%= form_tag login_path %>
+	<p>
+		Login: <br/>
+		<%= text_field_tag :login %>
+	</p>
+
+	<p>
+		Senha: <br/>
+		<%= password_field_tag :password %>
+	</p>
+
+	<p>
+		<%= submit_tag "Entrar" %>
+	</p>
