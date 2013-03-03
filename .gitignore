@@ -16,3 +16,4 @@
 *.*~
 *.swp
 /public/system
+Gemfile.lock
